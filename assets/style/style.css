@@ -80,3 +80,17 @@ footer {
   font-family: "Aleo", serif;
   color: rgba(154, 154, 154, 1);
 }
+
+h1{
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: row;
+    margin: 70px;
+}
+
+.contacForm{
+    padding: 100px;
+}
