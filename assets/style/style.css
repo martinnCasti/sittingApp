@@ -1,27 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-}
-
-body {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.85),
-      rgba(255, 255, 255, 0.85)
-    ),
-    url("../img/background.jpg");
-  background-size: 100%;
-}
-
-nav ul li {
-
-  padding: 20px;
-  margin: 40px;
-  display: inline;
-  flex-direction: row;
-}
-.navbar{
-    margin-left: 150px;
-    padding: 20px;
+  box-sizing: border-box;
 }
 
 a {
@@ -29,68 +9,144 @@ a {
   color: rgba(154, 154, 154, 1);
   font-size: 20px;
   font-family: "Aleo", serif;
-  font
+  font-size: 18px;
 }
 
-.features {
-    text-align: center;
-  margin: 100px 700px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+
+.picture{
+  width: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar{
+  grid-area: navbar;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.navbar ul li{
+  padding: 10px;
+}
+
+body{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "navbar navbar navbar"
+                       "main main main" 
+                       "footer footer footer";
+  background: linear-gradient(rgba(255, 255, 255, 0.85),rgba(255, 255, 255, 0.85)),
+  url("../img/background.jpg");
+  background-size: 100%;
+}
+
+main{
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features{
+  padding: 50px;
+  text-align: center;
   font-family: "Aleo", serif;
   font-size: 18px;
 }
 
-.container {
-  width: 5%;
+.description{
+  display: flex;
+  margin-left: 50px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 17px;
+  font-family: "Aleo", serif;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
   border-top: 4px solid black;
   border-bottom: 4px solid black;
-  margin: 50px 600px;
-  padding-right: 620px;
-  display: flex;
-  flex-direction: row;
-
 }
 
-.picture {
-  padding: 20px;
-}
-
-.description {
-  margin: 20px;
-  padding-top: px;
-
-  text-align: center;
-  font-size: 18px;
-  font-family: "Aleo", serif;
-  display: flex;
-  flex-direction: row;
-}
-
-footer {
+footer{
   background-color: rgba(52, 50, 50, 1);
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.copyright {
-  padding-bottom: 50px;
-  text-align: center;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
   font-size: 15px;
   font-family: "Aleo", serif;
   color: rgba(154, 154, 154, 1);
 }
 
+.copyright {
+  padding-bottom: 50px;
+  text-align: center;
+  margin-top: 30px;
+}
+
 h1{
-    text-align: center;
+  text-align: center;
 }
 
 .formulario{
-    display: flex;
-    flex-direction: row;
-    margin: 70px;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  margin: 70px;
 }
 
 .contacForm{
-    padding: 100px;
+  padding: 50px;
+}
+
+@media(min-width:576px){
+
+  .navbar{
+  grid-area: navbar;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  }
+  
+  .container{
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
+  .picture{
+    width: 200px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .description{
+    margin-right: 50px;
+    margin-bottom: 20px;
+
+  }
+  .formulario{
+    flex-wrap: wrap;
+  }
+
 }
