@@ -17,6 +17,10 @@ body{
   background-size: 100%;
 }
 
+.navbar{
+  background: linear-gradient(rgba(255, 255, 255, 0.70),rgba(255, 255, 255, 0.70))
+}
+
 .features{
 
   font-family: "Aleo", serif;
