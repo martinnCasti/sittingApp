@@ -6,80 +6,95 @@
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>HOME - SittingApp</title>
     <link rel="stylesheet" href="../assets/style/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
   </head>
   <body>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#">SITINGAPP</a></li>
-        </ul>
-        <ul class="mid">
-          <li><a href="../pages/product.html">PRODUCT</a></li>
-          <li><a href="../pages/galery.html">GALERY</a></li>
-          <li><a href="../pages/aboutus.html">ABOUT US</a></li>
-          <li><a href="../pages/contact.html">CONTACT</a></li>
-        </ul>
-        <ul class="end">
-          <li><a href="../pages/signup.html">SIGN UP</a></li>
-          <li><a href="../pages/signin.html">SIGN IN</a></li>
-        </ul>
-      </nav>
+    <!-- Navbar Started -->
+    <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid ">
+    <a class="navbar-brand" href="#">SITTING</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav d-flex justify-content-end">
+        <a class="nav-link" href="./pages/product.html">PRODUCT</a>
+        <a class="nav-link" href="./pages/galery.html">GALERY</a>
+        <a class="nav-link" href="./pages/aboutus.html">ABOUT US</a>
+        <a class="nav-link" href="./pages/contact.html">CONTACT</a>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="./pages/signup.html">SIGN UP</a>
+        <a class="nav-link" href="./pages/signin.html">SIGN IN</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Navbar Ended -->
     <main>
-      <div class="features">
+      <div class="d-flex flex-column text-center m-3 features">
         <h3>Reservar nunca fue tan facil y rapido</h3>
 
-        <p>
+        <p class="text-center">
           Reserva tu mesa con anticipacion o comienza una cola instantaneamente
           sabiendo cuanto tiempo de espera tiene
         </p>
       </div>
 
-      <div class="container">
-        <div class="picture">
+      <div class="container context col-9 col-sm-6 col-md-8 col-lg-10 d-flex p-4 flex-wrap justify-content-between p-4">
+        <div class=" col-md-3">
           <img
+            class="container-fluid"
             src="../assets/img/img1-index.jpg"
             alt="restaurant"
             width="200"
 
           />
-          <div class="description">
+          <div class="text-center description">
             <p>Selecciona el restaurante</p>
           </div>
         </div>
-        <div class="picture">
+        <div class=" col-md-3">
           <img
+            class="container-fluid"
             src="../assets/img/img2-index.jpg"
             alt="selecciona una mesa"
             width="200"
 
           />
-          <div class="description">
+          <div class="text-center description">
             <p>Seguimiento de tu mesa reservada</p>
           </div>
         </div>
-        <div class="picture">
+        <div class=" col-md-3">
           <img
+            class="container-fluid"
             src="../assets/img/img3-index.jpg"
             alt=""
             width="200"
           />
-          <div class="description">
+          <div class="text-center description">
             <p>Recibe notificaciones en tiempo real</p>
           </div>
         </div>
       </div>
-      <div class="features">
+      <div class="d-flex flex-column align-items-center m-3 features features">
         <p>Incribi tu local</p>
-        <p>
+        <p class="text-center">
           Ingresa los datos de tu local y te contactaremos para que comiences a
           administrar tus reservas
         </p>
       </div>
     </main>
     <footer>
-      <div class="copyright">
-        <h5>Made by Martin Castiñeira</h5>
+      <div class="d-flex flex-column text-center copyright">
+        <h5 class="mt-4 mb-4">Made by Martin Castiñeira</h5>
         <h5>Todos los derechos reservados</h5>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
