@@ -1,0 +1,8 @@
+/*Los primeros partial que se llama son las variables */
+@import "./utilities/variables";
+@import "./layout/nav";
+@import "./layout/mainIndex";
+@import "./layout/mainContact";
+@import "./layout/mainSignUp";
+@import "./layout/body";
+@import "./layout/footer"
