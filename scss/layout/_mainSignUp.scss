@@ -16,19 +16,44 @@
     margin-bottom: 17px;
   }
   
+@mixin propLabelnInput($top,$left,$padding) {
+  top:$top;
+  left:$left;
+  padding:$padding
+  
+}
+  
   .input {
+    @include propLabelnInput(0px,0px,0 20px );
     position: absolute;
-    top: 0px;
-    left: 0px;
     height: 100%;
     width: 100%;
     border: 1px solid #000000;
     border-radius: 7px;
     font-size: 16px;
-    padding: 0 20px;
     outline: none;
     background: none;
     z-index: 1;
+    &:focus + .label {
+      top: -7px;
+      left: 3px;
+      z-index: 10;
+      font-size: 14px;
+      font-weight: 600;
+      color: rgb(0, 0, 0);
+  
+      &:focus {
+        border: 2px solid rgb(71, 69, 71);
+      }
+    }
+
+    &:not(:placeholder-shown)+ .label {
+      top: -7px;
+      left: 3px;
+      z-index: 10;
+      font-size: 14px;
+      font-weight: 600;
+    }
   }
 
   ::placeholder {
@@ -36,10 +61,8 @@
   }
   
   .label {
+    @include propLabelnInput(15px,15px,0 4px );
     position: absolute;
-    top: 15px;
-    left: 15px;
-    padding: 0 4px;
     background-color: white;
     color: #DADCE0;
     font-size: 16px;
@@ -58,40 +81,11 @@
     cursor: pointer;
     font-size: 16px;
     margin-top: 30px;
-  }
-  
-  .submitBtn:hover {
-    background-color: #3f3a3a;
-    transform: translateY(-2px);
-  }
-  
-  .input:focus + .label {
-    top: -7px;
-    left: 3px;
-    z-index: 10;
-    font-size: 14px;
-    font-weight: 600;
-    color: rgb(0, 0, 0);
-  }
-  
-  .input:focus {
-    border: 2px solid rgb(71, 69, 71);
-  }
-  
-  .input:not(:placeholder-shown)+ .label {
-    top: -7px;
-    left: 3px;
-    z-index: 10;
-    font-size: 14px;
-    font-weight: 600;
+
+    &:hover {
+      background-color: #3f3a3a;
+      transform: translateY(-2px);
+    }
   }
 
-
   }
-  
-  
-  
-  
- 
-  
- 

@@ -5,22 +5,32 @@
     padding: 20px 40px;
     box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
   }
-  
   .submitBtn {
+    padding: map-get($button , padding );
+    border: map-get($button , border );
+    background-color: map-get($button , bkgColor );
+    color: map-get($button , color );
+    border-radius: map-get($button, radius );
+    font-size: map-get($button, fontSize );
     display: block;
     margin-left: auto;
-    padding: 15px 30px;
-    border: none;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
     margin-top: 30px;
+    cursor: pointer;
+
+   
+    &:hover {
+      background-color: #3f3a3a;
+      transform: translateY(-2px);
+    }
+  }
+  .submitBtnContact {
+   @extend .submitBtn;
+
+    &:hover {
+      background-color: #086a05;
+      transform: translateY(-4px);
+    }
   }
   
-  .submitBtn:hover {
-    background-color: #3f3a3a;
-    transform: translateY(-2px);
-  }
+
   
