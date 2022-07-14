@@ -115,8 +115,8 @@
       transform: translateY(-2px); }
 
 body {
-  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../assets/img/background.jpg");
-  background-size: 100%; }
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../assets/img/background2.jpg");
+  background-size: 100% 100%; }
 
 footer {
   background-color: #343232;
