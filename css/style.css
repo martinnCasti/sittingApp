@@ -6,7 +6,7 @@
     font-family: "Aleo", serif;
     font-size: 18px; }
 
-.features {
+.features, .inscripcion {
   font-family: "Aleo", serif;
   font-size: 20px; }
 
@@ -121,8 +121,11 @@ body {
 footer {
   background-color: #343232;
   margin-top: 100px;
-  font-size: 13px;
+  font-size: 20px;
   font-family: "Aleo", serif;
   color: #9a9a9a; }
   footer .copyright {
-    padding-bottom: 140px; }
+    padding-bottom: 50px; }
+  footer p {
+    font-family: "Aleo", serif;
+    font-size: 18px; }
